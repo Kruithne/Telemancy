@@ -3,7 +3,7 @@ local POINTS = {
 	{ teleX = 22.68, teleY = 36.42, teleName = "Falanaar" },
 	{ teleX = 42.07, teleY = 34.91, teleName = "Tel'Anor" },
 	{ teleX = 36.61, teleY = 46.54, teleName = "Ruins of Elune'eth" },
-	{ teleX = 45.80, teleY = 64.42, teleName = "Magisterium" },
+	{ teleX = 45.80, teleY = 64.42, teleName = "Sanctum of Order" },
 	{ teleX = 43.07, teleY = 76.91, teleName = "Lunastre Estate" },
 	{ teleX = 38.19, teleY = 77.13, teleName = "Felsoul Hold" },
 	{ teleX = 46.66, teleY = 81.00, teleName = "Waning Crescent" }

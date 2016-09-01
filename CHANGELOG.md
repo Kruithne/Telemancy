@@ -1,3 +1,6 @@
+** Version 1.0.3 **
+* Renamed "Magisterium" to "Sanctum of Order" to match portal name.
+
 ** Version 1.0.2 **
 * Fixed issue with icons blocking world quests on the map.
 
