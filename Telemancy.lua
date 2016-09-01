@@ -28,8 +28,8 @@ t.OnEvent = function(self, event, ...)
 	if event == "WORLD_MAP_UPDATE" then
 		-- Check the world map is actually shown.
 		if WorldMapFrame:IsShown() then
-			-- Confirm that we're in the correct zone.
-			if GetCurrentMapAreaID() == t.mapID then
+			-- Confirm that we're in the correct zone (and multi-map level).
+			if GetCurrentMapAreaID() == t.mapID and GetCurrentMapDungeonLevel() == 0 then
 				t.UpdateIcons();
 				return;
 			end
