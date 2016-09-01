@@ -1,12 +1,12 @@
 local POINTS = {
 	{ teleX = 31.30, teleY = 10.78, teleName = "Moon Guard Stronghold" },
-	{ teleX = 0, teleY = 0, teleName = "Falanaar" },
-	{ teleX = 0, teleY = 0, teleName = "Tel'Anor" },
-	{ teleX = 0, teleY = 0, teleName = "Ruins of Elune'eth" },
-	{ teleX = 0, teleY = 0, teleName = "Magisterium" },
-	{ teleX = 0, teleY = 0, teleName = "Lunastre Estate" },
-	{ teleX = 0, teleY = 0, teleName = "Felsoul Hold" },
-	{ teleX = 0, teleY = 0, teleName = "Waning Crescent" }
+	{ teleX = 22.68, teleY = 36.42, teleName = "Falanaar" },
+	{ teleX = 42.07, teleY = 34.91, teleName = "Tel'Anor" },
+	{ teleX = 36.61, teleY = 46.54, teleName = "Ruins of Elune'eth" },
+	{ teleX = 45.80, teleY = 64.42, teleName = "Magisterium" },
+	{ teleX = 43.07, teleY = 76.91, teleName = "Lunastre Estate" },
+	{ teleX = 38.19, teleY = 77.13, teleName = "Felsoul Hold" },
+	{ teleX = 46.66, teleY = 81.00, teleName = "Waning Crescent" }
 };
 
 Telemancy = {
