@@ -66,7 +66,7 @@ t.OnIconUpdate = function(self, elapsed)
 		-- Get the current width/height of the POI frame.
 		local frameWidth, frameHeight = WorldMapPOIFrame:GetSize();
 
-		self:SetFrameStrata("TOOLTIP"); -- Map frame resets strata, so we enforce it here every time.
+		self:SetFrameStrata("HIGH"); -- Map frame resets strata, so we enforce it here every time.
 		self:SetPoint("TOPLEFT", (frameWidth * self.teleX) - t.iconOffset, (frameHeight * self.teleY) + t.iconOffset);
 	else
 		self.updateTimer = self.updateTimer + elapsed;
