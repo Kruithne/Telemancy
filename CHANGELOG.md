@@ -1,3 +1,6 @@
+** Version 1.0.4 **
+* Fixed an issue that was causing Telemancy to hide other POI titles on the map.
+
 ** Version 1.0.3 **
 * Renamed "Magisterium" to "Sanctum of Order" to match portal name.
 

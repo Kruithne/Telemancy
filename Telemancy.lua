@@ -79,7 +79,7 @@ t.OnIconEnter = function(self)
 end
 
 t.OnIconLeave = function(self)
-	WorldMapFrameAreaLabel:Hide();
+	WorldMapFrameAreaLabel:SetText("");
 end
 
 t.Setup = function()
