@@ -6,7 +6,8 @@ local POINTS = {
 	{ teleX = 45.80, teleY = 64.42, teleName = "Sanctum of Order" },
 	{ teleX = 43.07, teleY = 76.91, teleName = "Lunastre Estate" },
 	{ teleX = 38.19, teleY = 77.13, teleName = "Felsoul Hold" },
-	{ teleX = 46.66, teleY = 81.00, teleName = "Waning Crescent" }
+	{ teleX = 46.66, teleY = 81.00, teleName = "Waning Crescent" },
+	{ teleX = 64.09, teleY = 69.78, teleName = "Twilight Vineyards" }
 };
 
 Telemancy = {

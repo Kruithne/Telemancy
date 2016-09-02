@@ -1,3 +1,6 @@
+** Version 1.0.5 **
+* Added missing "Twilight Vineyards" to the map.
+
 ** Version 1.0.4 **
 * Fixed an issue that was causing Telemancy to hide other POI titles on the map.
 
