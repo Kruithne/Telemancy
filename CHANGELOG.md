@@ -1,3 +1,6 @@
+** Version 1.0.6 **
+* Added localization support for frFR and deDE.
+
 ** Version 1.0.5 **
 * Added missing "Twilight Vineyards" to the map.
 

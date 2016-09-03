@@ -1,13 +1,13 @@
 local POINTS = {
-	{ teleX = 31.30, teleY = 10.78, teleName = "Moon Guard Stronghold" },
-	{ teleX = 22.68, teleY = 36.42, teleName = "Falanaar" },
-	{ teleX = 42.07, teleY = 34.91, teleName = "Tel'Anor" },
-	{ teleX = 36.61, teleY = 46.54, teleName = "Ruins of Elune'eth" },
-	{ teleX = 45.80, teleY = 64.42, teleName = "Sanctum of Order" },
-	{ teleX = 43.07, teleY = 76.91, teleName = "Lunastre Estate" },
-	{ teleX = 38.19, teleY = 77.13, teleName = "Felsoul Hold" },
-	{ teleX = 46.66, teleY = 81.00, teleName = "Waning Crescent" },
-	{ teleX = 64.09, teleY = 69.78, teleName = "Twilight Vineyards" }
+	{ teleX = 31.30, teleY = 10.78, teleName = "TELE_MOON_GUARD" },
+	{ teleX = 22.68, teleY = 36.42, teleName = "TELE_FALANAAR" },
+	{ teleX = 42.07, teleY = 34.91, teleName = "TELE_TELANOR" },
+	{ teleX = 36.61, teleY = 46.54, teleName = "TELE_RUINS_ELUNE" },
+	{ teleX = 45.80, teleY = 64.42, teleName = "TELE_SANCTUM_ORDER" },
+	{ teleX = 43.07, teleY = 76.91, teleName = "TELE_LUNASTRE" },
+	{ teleX = 38.19, teleY = 77.13, teleName = "TELE_FELSOUL_HOLD" },
+	{ teleX = 46.66, teleY = 81.00, teleName = "TELE_WANING_CRESENT" },
+	{ teleX = 64.09, teleY = 69.78, teleName = "TELE_TWILIGHT_VINEYARDS" }
 };
 
 Telemancy = {
@@ -15,9 +15,11 @@ Telemancy = {
 	icons = {}, -- Used to store the icons we cook!
 	mapID = 1033, -- Suramar
 	iconOffset = 16, -- Icon is 32x32
+	strings = {} -- Localization table.
 };
 
 local t = Telemancy;
+local L = Telemancy.strings;
 
 -- Event frame! How.. eventful.
 local eventFrame = CreateFrame("FRAME");
@@ -75,7 +77,7 @@ t.OnIconUpdate = function(self, elapsed)
 end
 
 t.OnIconEnter = function(self)
-	WorldMapFrameAreaLabel:SetText("Telemancy: " .. self.teleName);
+	WorldMapFrameAreaLabel:SetText("Telemancy: " .. L[self.teleName]);
 	WorldMapFrameAreaLabel:Show();
 end
 
