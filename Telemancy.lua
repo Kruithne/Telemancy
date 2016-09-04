@@ -14,7 +14,7 @@ Telemancy = {
 	hasSetup = false,
 	icons = {}, -- Used to store the icons we cook!
 	mapID = 1033, -- Suramar
-	iconOffset = 14, -- Icon is 32x32
+	iconOffset = 14, -- Icon is 28x28
 	strings = {} -- Localization table.
 };
 
