@@ -1,3 +1,9 @@
+
+-- Static.
+local ICON_OFFSET = 14; -- Icon is 28x28
+local ACTIVE_ICON = [[Interface/MINIMAP/Vehicle-AllianceMagePortal]];
+local INACTIVE_ICON = [[Interface/MINIMAP/Vehicle-HordeMagePortal]];
+local MAP_ID = 1033;
 local POINTS = {
 	{ teleX = 31.30, teleY = 10.78, teleName = "TELE_MOON_GUARD", questID = 43808 },
 	{ teleX = 22.68, teleY = 36.42, teleName = "TELE_FALANAAR", questID = 42230 },
@@ -13,8 +19,6 @@ local POINTS = {
 Telemancy = {
 	hasSetup = false,
 	icons = {}, -- Used to store the icons we cook!
-	mapID = 1033, -- Suramar
-	iconOffset = 14, -- Icon is 28x28
 	strings = {} -- Localization table.
 };
 
@@ -32,7 +36,7 @@ t.OnEvent = function(self, event, ...)
 		-- Check the world map is actually shown.
 		if WorldMapFrame:IsShown() then
 			-- Confirm that we're in the correct zone (and multi-map level).
-			if GetCurrentMapAreaID() == t.mapID and GetCurrentMapDungeonLevel() == 0 then
+			if GetCurrentMapAreaID() == MAP_ID and GetCurrentMapDungeonLevel() == 0 then
 				t.UpdateIcons();
 				return;
 			end
@@ -53,7 +57,7 @@ t.UpdateIcons = function()
 	local frameWidth, frameHeight = WorldMapPOIFrame:GetSize();
 	for key, icon in pairs(t.icons) do
 		-- set the icons when WorldMap is updating (eg. Zoom)
-		icon:SetPoint("TOPLEFT", (frameWidth * icon.teleX) - t.iconOffset, (frameHeight * icon.teleY) + t.iconOffset);
+		icon:SetPoint("TOPLEFT", (frameWidth * icon.teleX) - ICON_OFFSET, (frameHeight * icon.teleY) + ICON_OFFSET);
 		icon:Show();
 	end
 end
@@ -72,17 +76,17 @@ t.OnIconUpdate = function(self, elapsed)
 		-- Get the current width/height of the POI frame.
 		local frameWidth, frameHeight = WorldMapPOIFrame:GetSize();
 		self:SetFrameStrata("HIGH"); -- Map frame resets strata, so we enforce it here every time.
-		self:SetPoint("TOPLEFT", (frameWidth * self.teleX) - t.iconOffset, (frameHeight * self.teleY) + t.iconOffset);
+		self:SetPoint("TOPLEFT", (frameWidth * self.teleX) - ICON_OFFSET, (frameHeight * self.teleY) + ICON_OFFSET);
 
 		-- check if Quest is completed and change texture if needed
 		if IsQuestFlaggedCompleted(self.questID) then
 			if not self.isActive then
-				self.texture:SetTexture([[Interface/MINIMAP/Vehicle-AllianceMagePortal]]);
+				self.texture:SetTexture(ACTIVE_ICON);
 				self.isActive = true;
 			end
 		else
 			if self.isActive then
-				self.texture:SetTexture([[Interface/MINIMAP/Vehicle-HordeMagePortal]]);
+				self.texture:SetTexture(INACTIVE_ICON);
 				self.isActive = false;
 			end
 		end
