@@ -69,6 +69,21 @@ t.HideIcons = function()
 	end
 end
 
+t.UpdateIconState = function(icon)
+	-- check if Quest is completed and change texture if needed
+	if IsQuestFlaggedCompleted(icon.questID) then
+		if not icon.isActive then
+			icon.texture:SetTexture(ACTIVE_ICON);
+			icon.isActive = true;
+		end
+	else
+		if icon.isActive then
+			icon.texture:SetTexture(INACTIVE_ICON);
+			icon.isActive = false;
+		end
+	end
+end
+
 t.OnIconUpdate = function(self, elapsed)
 	-- Every second, check our icons are in the right place.
 	-- Lots of things can displace them, but we don't need to go over-board on checking.
@@ -78,18 +93,7 @@ t.OnIconUpdate = function(self, elapsed)
 		self:SetFrameStrata("HIGH"); -- Map frame resets strata, so we enforce it here every time.
 		self:SetPoint("TOPLEFT", (frameWidth * self.teleX) - ICON_OFFSET, (frameHeight * self.teleY) + ICON_OFFSET);
 
-		-- check if Quest is completed and change texture if needed
-		if IsQuestFlaggedCompleted(self.questID) then
-			if not self.isActive then
-				self.texture:SetTexture(ACTIVE_ICON);
-				self.isActive = true;
-			end
-		else
-			if self.isActive then
-				self.texture:SetTexture(INACTIVE_ICON);
-				self.isActive = false;
-			end
-		end
+		t.UpdateIconState(self);
 	else
 		self.updateTimer = self.updateTimer + elapsed;
 	end
@@ -118,7 +122,7 @@ t.Setup = function()
 		strata = "TOOLTIP",
 		textures = {
 			injectSelf = "texture",
-			texture = nil,
+			texture = INACTIVE_ICON,
 		},
 		scripts = {
 			OnUpdate = t.OnIconUpdate,
@@ -132,18 +136,14 @@ t.Setup = function()
 		-- Convert the generic point to an actual offset for anchoring.
 		point.teleX = point.teleX / 100;
 		point.teleY = -(point.teleY / 100);
-
-		-- Set the icon to represent the quest completion state.
-		if IsQuestFlaggedCompleted(point.questID) then
-			template.textures.texture = ACTIVE_ICON;
-		else
-			template.textures.texture = INACTIVE_ICON;
-		end
 		
 		template.data = point; -- Provide point data to the frame.
 		template.data.updateTimer = 0; -- Used in OnIconUpdate
 
-		table.insert(t.icons, Krutilities:Frame(template));
+		local frame = Krutilities:Frame(template); -- Create our new icon frame.
+		table.insert(t.icons, frame); -- Store the frame in our table for later.
+
+		t.UpdateIconState(self); -- Initial state update.
 	end
 
 	POINTS = nil; -- Dereference this, no longer need it.
