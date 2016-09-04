@@ -9,3 +9,5 @@ L["TELE_LUNASTRE"] = "Lunastre Estate";
 L["TELE_FELSOUL_HOLD"] = "Felsoul Hold";
 L["TELE_WANING_CRESENT"] = "Waning Crescent";
 L["TELE_TWILIGHT_VINEYARDS"] = "Twilight Vineyards";
+L["TELE_ACTIVE"] = "Status: Active";
+L["TELE_INACTIVE"] = "Status: Inactive";

@@ -12,4 +12,6 @@ if GetLocale() == "ruRU" then
 	L["TELE_FELSOUL_HOLD"] = "Оплот Оскверненной Души";
 	L["TELE_WANING_CRESENT"] = "Лунный полумрак";
 	L["TELE_TWILIGHT_VINEYARDS"] = "Сумеречные виноградники";
+	L["TELE_ACTIVE"] = "Status: Active";
+	L["TELE_INACTIVE"] = "Status: Inactive";
 end
