@@ -12,4 +12,6 @@ if GetLocale() == "deDE" then
 	L["TELE_FELSOUL_HOLD"] = "Teufelsseelenbastion";
 	L["TELE_WANING_CRESENT"] = "Mondsichelforum";
 	L["TELE_TWILIGHT_VINEYARDS"] = "Zwielichtrebgärten";
+	L["TELE_ACTIVE"] = "Status: Aktiv";
+	L["TELE_INACTIVE"] = "Status: Inaktiv";
 end
