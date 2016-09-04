@@ -3,15 +3,15 @@
 if GetLocale() == "frFR" then
 	local L = Telemancy.strings;
 
-	L["TELE_MOON_GUARD"] = "Moon Guard Stronghold";
+	L["TELE_MOON_GUARD"] = "Bastion de la Garde de la Lune";
 	L["TELE_FALANAAR"] = "Falanaar";
 	L["TELE_TELANOR"] = "Tel'Anor";
-	L["TELE_RUINS_ELUNE"] = "Ruins of Elune'eth";
-	L["TELE_SANCTUM_ORDER"] = "Sanctum of Order";
-	L["TELE_LUNASTRE"] = "Lunastre Estate";
-	L["TELE_FELSOUL_HOLD"] = "Felsoul Hold";
-	L["TELE_WANING_CRESENT"] = "Waning Crescent";
-	L["TELE_TWILIGHT_VINEYARDS"] = "Twilight Vineyards";
-	L["TELE_ACTIVE"] = "Status: Active";
-	L["TELE_INACTIVE"] = "Status: Inactive";
+	L["TELE_RUINS_ELUNE"] = "Ruines d'Élune'eth";
+	L["TELE_SANCTUM_ORDER"] = "Sanctum de l'Ordre";
+	L["TELE_LUNASTRE"] = "Domaine Lunastre";
+	L["TELE_FELSOUL_HOLD"] = "Bastion Gangrâme";
+	L["TELE_WANING_CRESENT"] = "Retraite du Mande-Étoiles";
+	L["TELE_TWILIGHT_VINEYARDS"] = "Vignobles du Crépuscule";
+	L["TELE_ACTIVE"] = "Statut: Actif";
+	L["TELE_INACTIVE"] = "Statut: Inactif";
 end
