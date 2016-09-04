@@ -114,7 +114,7 @@ t.Setup = function()
 		strata = "TOOLTIP",
 		textures = {
 			injectSelf = "texture",
-			texture = [[Interface/MINIMAP/Vehicle-AllianceMagePortal]]
+			texture = nil,
 		},
 		scripts = {
 			OnUpdate = t.OnIconUpdate,
@@ -129,9 +129,11 @@ t.Setup = function()
 		point.teleX = point.teleX / 100;
 		point.teleY = -(point.teleY / 100);
 
-		-- check if Quest is completed and change texture
-		if not IsQuestFlaggedCompleted(point.questID) then
-			template.textures.texture = [[Interface/MINIMAP/Vehicle-HordeMagePortal]]
+		-- Set the icon to represent the quest completion state.
+		if IsQuestFlaggedCompleted(point.questID) then
+			template.textures.texture = [[Interface/MINIMAP/Vehicle-AllianceMagePortal]];
+		else
+			template.textures.texture = [[Interface/MINIMAP/Vehicle-HordeMagePortal]];
 		end
 		
 		template.data = point; -- Provide point data to the frame.
