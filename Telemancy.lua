@@ -1,13 +1,13 @@
 local POINTS = {
-	{ teleX = 31.30, teleY = 10.78, teleName = "TELE_MOON_GUARD" },
-	{ teleX = 22.68, teleY = 36.42, teleName = "TELE_FALANAAR" },
-	{ teleX = 42.07, teleY = 34.91, teleName = "TELE_TELANOR" },
-	{ teleX = 36.61, teleY = 46.54, teleName = "TELE_RUINS_ELUNE" },
-	{ teleX = 45.80, teleY = 64.42, teleName = "TELE_SANCTUM_ORDER" },
-	{ teleX = 43.07, teleY = 76.91, teleName = "TELE_LUNASTRE" },
-	{ teleX = 38.19, teleY = 77.13, teleName = "TELE_FELSOUL_HOLD" },
-	{ teleX = 46.66, teleY = 81.00, teleName = "TELE_WANING_CRESENT" },
-	{ teleX = 64.09, teleY = 69.78, teleName = "TELE_TWILIGHT_VINEYARDS" }
+	{ teleX = 31.30, teleY = 10.78, teleName = "TELE_MOON_GUARD", questID = 43808 },
+	{ teleX = 22.68, teleY = 36.42, teleName = "TELE_FALANAAR", questID = 42230 },
+	{ teleX = 42.07, teleY = 34.91, teleName = "TELE_TELANOR", questID = 43809 },
+	{ teleX = 36.61, teleY = 46.54, teleName = "TELE_RUINS_ELUNE", questID = 40956 },
+	{ teleX = 45.80, teleY = 64.42, teleName = "TELE_SANCTUM_ORDER", questID = 43813 },
+	{ teleX = 43.07, teleY = 76.91, teleName = "TELE_LUNASTRE", questID = 43811 },
+	{ teleX = 38.19, teleY = 77.13, teleName = "TELE_FELSOUL_HOLD", questID = 41575 },
+	{ teleX = 46.66, teleY = 81.00, teleName = "TELE_WANING_CRESENT", questID = 42487 },
+	{ teleX = 64.00, teleY = 60.40, teleName = "TELE_TWILIGHT_VINEYARDS", questID = 44084 }
 };
 
 Telemancy = {
@@ -77,8 +77,14 @@ t.OnIconUpdate = function(self, elapsed)
 end
 
 t.OnIconEnter = function(self)
-	WorldMapFrameAreaLabel:SetText("Telemancy: " .. L[self.teleName]);
+	WorldMapFrameAreaLabel:SetText("Telemancy: " .. L[self.teleName]);	
+	if IsQuestFlaggedCompleted(self.questID) then
+		WorldMapFrameAreaDescription:SetText("Status: "..L["TELE_ACTIVE"]);
+	else
+		WorldMapFrameAreaDescription:SetText("Status: "..L["TELE_INACTIVE"]);
+	end	
 	WorldMapFrameAreaLabel:Show();
+	WorldMapFrameAreaDescription:Show();
 end
 
 t.OnIconLeave = function(self)
@@ -108,6 +114,11 @@ t.Setup = function()
 		point.teleX = point.teleX / 100;
 		point.teleY = -(point.teleY / 100);
 
+		-- check if Quest is completed and change texture color
+		if not IsQuestFlaggedCompleted(point.questID) then
+			template.textures.color = {0.4745098039, 0.0117647059, 0.0117647059}
+		end
+		
 		template.data = point; -- Provide point data to the frame.
 		template.data.updateTimer = 0; -- Used in OnIconUpdate
 
