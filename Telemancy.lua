@@ -135,9 +135,9 @@ t.Setup = function()
 
 		-- Set the icon to represent the quest completion state.
 		if IsQuestFlaggedCompleted(point.questID) then
-			template.textures.texture = [[Interface/MINIMAP/Vehicle-AllianceMagePortal]];
+			template.textures.texture = ACTIVE_ICON;
 		else
-			template.textures.texture = [[Interface/MINIMAP/Vehicle-HordeMagePortal]];
+			template.textures.texture = INACTIVE_ICON;
 		end
 		
 		template.data = point; -- Provide point data to the frame.
