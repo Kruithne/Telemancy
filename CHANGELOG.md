@@ -2,6 +2,7 @@
 * Added localization support for frFR, deDE and ruRU.
 * Corrected location of Twilight Vineyards portal.
 * Indication of active/inactive state of a portal added.
+* Fixed delay with icons being positioned correctly when first opening the map.
 
 ** Version 1.0.5 **
 * Added missing "Twilight Vineyards" to the map.
