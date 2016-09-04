@@ -143,7 +143,7 @@ t.Setup = function()
 		local frame = Krutilities:Frame(template); -- Create our new icon frame.
 		table.insert(t.icons, frame); -- Store the frame in our table for later.
 
-		t.UpdateIconState(self); -- Initial state update.
+		t.UpdateIconState(frame); -- Initial state update.
 	end
 
 	POINTS = nil; -- Dereference this, no longer need it.
