@@ -73,15 +73,17 @@ t.OnIconUpdate = function(self, elapsed)
 		local frameWidth, frameHeight = WorldMapPOIFrame:GetSize();
 		self:SetFrameStrata("HIGH"); -- Map frame resets strata, so we enforce it here every time.
 		self:SetPoint("TOPLEFT", (frameWidth * self.teleX) - t.iconOffset, (frameHeight * self.teleY) + t.iconOffset);
-		
+
 		-- check if Quest is completed and change texture if needed
 		if IsQuestFlaggedCompleted(self.questID) then
-			if self.texture:GetTexture() ~= [[Interface/MINIMAP/Vehicle-AllianceMagePortal]] then
+			if not self.isActive then
 				self.texture:SetTexture([[Interface/MINIMAP/Vehicle-AllianceMagePortal]]);
+				self.isActive = true;
 			end
 		else
-			if self.texture:GetTexture() ~= [[Interface/MINIMAP/Vehicle-HordeMagePortal]] then
+			if self.isActive then
 				self.texture:SetTexture([[Interface/MINIMAP/Vehicle-HordeMagePortal]]);
+				self.isActive = false;
 			end
 		end
 	else
