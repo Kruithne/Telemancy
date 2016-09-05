@@ -1,3 +1,6 @@
+** Version 1.0.7 **
+* Added localization support for zhCN.
+
 ** Version 1.0.6 **
 * Icons are now 20% prettier than before.
 * Corrected location of Twilight Vineyards portal.
