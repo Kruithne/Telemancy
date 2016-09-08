@@ -13,6 +13,7 @@ Telemancy.lua
 
 localization/lang_default.lua
 localization/lang_frFR.lua
+localization/lang_esES.lua
 localization/lang_deDE.lua
 localization/lang_ruRU.lua
 localization/lang_zhCN.lua
