@@ -10,7 +10,7 @@ if GetLocale() == "frFR" then
 	L["TELE_SANCTUM_ORDER"] = "Sanctum de l'Ordre";
 	L["TELE_LUNASTRE"] = "Domaine Lunastre";
 	L["TELE_FELSOUL_HOLD"] = "Bastion Gangrâme";
-	L["TELE_WANING_CRESENT"] = "Retraite du Mande-Étoiles";
+	L["TELE_WANING_CRESENT"] = "Lune descendante";
 	L["TELE_TWILIGHT_VINEYARDS"] = "Vignobles du Crépuscule";
 	L["TELE_ACTIVE"] = "Statut: Actif";
 	L["TELE_INACTIVE"] = "Statut: Inactif";
