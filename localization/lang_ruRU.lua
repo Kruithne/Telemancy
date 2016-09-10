@@ -1,4 +1,4 @@
--- Russian localization.
+-- Russian localization by vlakarados.
 
 if GetLocale() == "ruRU" then
 	local L = Telemancy.strings;

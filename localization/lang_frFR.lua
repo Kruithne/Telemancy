@@ -1,4 +1,4 @@
--- French localization.
+-- French localization by Tartifion.
 
 if GetLocale() == "frFR" then
 	local L = Telemancy.strings;

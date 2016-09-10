@@ -1,4 +1,4 @@
--- Simplified Chinese localization.
+-- Simplified Chinese localization by fyhcslb (?).
 
 if GetLocale() == "zhCN" then
 	local L = Telemancy.strings;
