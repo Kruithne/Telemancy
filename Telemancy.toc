@@ -5,7 +5,7 @@
 ## Version: 1.0.8
 
 ## X-Curse-Project-ID: telemancy
-## X-Contributors: q3fuba, Gnarfoz, vlakarados, fyhcslb, Urkaz
+## X-Contributors: q3fuba, Gnarfoz, vlakarados, fyhcslb, Urkaz, 이중호
 ## X-License: All Rights Reserved. Modifications welcome on GitHub: https://github.com/Kruithne/Telemancy
 
 Krutilities.lua
@@ -17,3 +17,4 @@ localization/lang_esES.lua
 localization/lang_deDE.lua
 localization/lang_ruRU.lua
 localization/lang_zhCN.lua
+localization/lang_koKR.lua
