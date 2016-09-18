@@ -9,7 +9,7 @@ local POINTS = {
 	{ teleX = 22.68, teleY = 36.42, teleName = "TELE_FALANAAR", questID = 42230 },
 	{ teleX = 42.07, teleY = 34.91, teleName = "TELE_TELANOR", questID = 43809 },
 	{ teleX = 36.61, teleY = 46.54, teleName = "TELE_RUINS_ELUNE", questID = 40956 },
-	{ teleX = 45.80, teleY = 64.42, teleName = "TELE_SANCTUM_ORDER", questID = 43813 },
+	{ teleX = 43.41, teleY = 60.56, teleName = "TELE_SANCTUM_ORDER", questID = 43813 },
 	{ teleX = 43.07, teleY = 76.91, teleName = "TELE_LUNASTRE", questID = 43811 },
 	{ teleX = 38.19, teleY = 77.13, teleName = "TELE_FELSOUL_HOLD", questID = 41575 },
 	{ teleX = 46.66, teleY = 81.00, teleName = "TELE_WANING_CRESENT", questID = 42487 },
