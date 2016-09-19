@@ -1,3 +1,7 @@
+** Version 1.1.0 **
+* Added Chinese localization.
+* Fixed Sanctum of Order map icon position.
+
 ** Version 1.0.9 **
 * Added Korean localization.
 
