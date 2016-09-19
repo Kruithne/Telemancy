@@ -2,7 +2,7 @@
 ## Title: Telemancy
 ## Notes: Display Suramar telemancy portal network on the world map.
 ## Author: Kruithne
-## Version: 1.0.8
+## Version: 1.0.9
 
 ## X-Curse-Project-ID: telemancy
 ## X-Contributors: q3fuba, Gnarfoz, vlakarados, fyhcslb, Urkaz, 이중호, Tartifion

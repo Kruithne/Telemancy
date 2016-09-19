@@ -1,5 +1,8 @@
+** Version 1.0.9 **
+* Added Korean localization.
+
 ** Version 1.0.8 **
-** Added Spaniah localization.
+* Added Spaniah localization.
 
 ** Version 1.0.7 **
 * Added localization support for zhCN.
