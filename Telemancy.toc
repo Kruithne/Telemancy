@@ -18,3 +18,4 @@ localization/lang_deDE.lua
 localization/lang_ruRU.lua
 localization/lang_zhCN.lua
 localization/lang_koKR.lua
+localization/lang_zhTW.lua
