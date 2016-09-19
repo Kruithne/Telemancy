@@ -1,5 +1,3 @@
--- Simplified Chinese localization by fyhcslb (?).
-
 if GetLocale() == "zhTW" then
 	local L = Telemancy.strings;
 
