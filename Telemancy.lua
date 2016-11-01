@@ -112,6 +112,7 @@ end
 
 t.OnIconLeave = function(self)
 	WorldMapFrameAreaLabel:SetText("");
+	WorldMapFrameAreaDescription:SetText("");
 end
 
 t.Setup = function()
