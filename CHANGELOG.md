@@ -1,3 +1,7 @@
+** Version 1.1.1 **
+* After finishing the 'Silence in the City' quest, the 'Waning Cresent' portal will be removed from your map.
+* After finishing 'The Way Back Home' quest, the 'Evermoon Terrace' portal will be activated on your map.
+
 ** Version 1.1.0 **
 * Added Chinese localization.
 * Fixed Sanctum of Order map icon position.

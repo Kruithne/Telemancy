@@ -12,8 +12,9 @@ local POINTS = {
 	{ teleX = 43.41, teleY = 60.56, teleName = "TELE_SANCTUM_ORDER", questID = 43813 },
 	{ teleX = 43.07, teleY = 76.91, teleName = "TELE_LUNASTRE", questID = 43811 },
 	{ teleX = 38.19, teleY = 77.13, teleName = "TELE_FELSOUL_HOLD", questID = 41575 },
-	{ teleX = 46.66, teleY = 81.00, teleName = "TELE_WANING_CRESENT", questID = 42487 },
-	{ teleX = 64.00, teleY = 60.40, teleName = "TELE_TWILIGHT_VINEYARDS", questID = 44084 }
+	{ teleX = 46.66, teleY = 81.00, teleName = "TELE_WANING_CRESENT", questID = 42487, removedBy = 38649 },
+	{ teleX = 64.00, teleY = 60.40, teleName = "TELE_TWILIGHT_VINEYARDS", questID = 44084 },
+	{ teleX = 52.00, teleY = 78.76, teleName = "TELE_EVERMOON_TERRACE", questID = 42889 }
 };
 
 Telemancy = {
@@ -57,8 +58,12 @@ t.UpdateIcons = function()
 	local frameWidth, frameHeight = WorldMapPOIFrame:GetSize();
 	for key, icon in pairs(t.icons) do
 		-- set the icons when WorldMap is updating (eg. Zoom)
-		icon:SetPoint("TOPLEFT", (frameWidth * icon.teleX) - ICON_OFFSET, (frameHeight * icon.teleY) + ICON_OFFSET);
-		icon:Show();
+		if icon.removedBy and IsQuestFlaggedCompleted(icon.removedBy) then
+			icon:Hide();
+		else
+			icon:SetPoint("TOPLEFT", (frameWidth * icon.teleX) - ICON_OFFSET, (frameHeight * icon.teleY) + ICON_OFFSET);
+			icon:Show();
+		end
 	end
 end
 
