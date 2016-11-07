@@ -99,6 +99,8 @@ t.OnIconUpdate = function(self, elapsed)
 		self:SetPoint("TOPLEFT", (frameWidth * self.teleX) - ICON_OFFSET, (frameHeight * self.teleY) + ICON_OFFSET);
 
 		t.UpdateIconState(self);
+
+		self.updateTimer = 0;
 	else
 		self.updateTimer = self.updateTimer + elapsed;
 	end
