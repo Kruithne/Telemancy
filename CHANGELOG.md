@@ -1,3 +1,6 @@
+** Version 1.1.2 **
+* Added deDE localization for Evermoon Terrace.
+
 ** Version 1.1.1 **
 * After finishing the 'Silence in the City' quest, the 'Waning Cresent' portal will be removed from your map.
 * After finishing 'The Way Back Home' quest, the 'Evermoon Terrace' portal will be activated on your map.
