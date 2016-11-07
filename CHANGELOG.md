@@ -1,3 +1,6 @@
+** Version 1.1.3 **
+* Fixed icons not showing on the fullscreen map.
+
 ** Version 1.1.2 **
 * Added deDE localization for Evermoon Terrace.
 
