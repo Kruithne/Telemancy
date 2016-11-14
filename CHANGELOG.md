@@ -1,3 +1,6 @@
+** Version 1.1.4 **
+* Updated Russian (ruRU) localization.
+
 ** Version 1.1.3 **
 * Fixed icons not showing on the fullscreen map.
 
