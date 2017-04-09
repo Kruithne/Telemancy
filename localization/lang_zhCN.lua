@@ -12,6 +12,8 @@ if GetLocale() == "zhCN" then
 	L["TELE_FELSOUL_HOLD"] = "邪魂堡垒";
 	L["TELE_WANING_CRESENT"] = "残月酒馆";
 	L["TELE_TWILIGHT_VINEYARDS"] = "暮光酒庄";
+	L["TELE_EVERMOON_TERRACE"]= "永月平台";
+	L["TELE_ASTRAVAR_HARBOR"] = "阿斯塔瓦港";
 	L["TELE_ACTIVE"] = "状态：已激活";
 	L["TELE_INACTIVE"] = "状态：未激活";
 end
