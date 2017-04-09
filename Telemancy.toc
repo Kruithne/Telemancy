@@ -1,4 +1,4 @@
-## Interface: 70100
+## Interface: 70200
 ## Title: Telemancy
 ## Notes: Display Suramar telemancy portal network on the world map.
 ## Author: Kruithne
