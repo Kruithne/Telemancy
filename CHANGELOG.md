@@ -1,3 +1,7 @@
+** Updated 1.1.5 **
+* Added portal: Astravar Harbor.
+* Updated localization for koKR, zhCN, zhTW.
+
 ** Version 1.1.4 **
 * Updated Russian (ruRU) localization.
 
