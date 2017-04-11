@@ -2,12 +2,12 @@
 ## Title: Telemancy
 ## Notes: Display Suramar telemancy portal network on the world map.
 ## Author: Kruithne
-## Version: 1.1.5
+## Version: 1.1.6
 
 ## X-Curse-Project-ID: telemancy
 ## X-GitHub-Repo: Kruithne/Telemancy
 ## X-Localization: enUS, frFR, esES, deDE, ruRU, zhCN, koKR, zhTW
-## X-Contributors: q3fuba, Gnarfoz, vlakarados, fyhcslb, Urkaz, 이중호, Tartifion, mrozekma, EKE00372, zp, Bloerwald, battlee
+## X-Contributors: q3fuba, Gnarfoz, vlakarados, fyhcslb, Urkaz, 이중호, Tartifion, mrozekma, EKE00372, zp, Bloerwald, battlee, Nelfym.
 ## X-License: All Rights Reserved. Modifications welcome on GitHub: https://github.com/Kruithne/Telemancy
 
 Krutilities.lua

@@ -1,3 +1,7 @@
+** Version 1.1.6 **
+* Updated localization for frFR.
+* Fixed missing coma that broke everything (thanks Nelfym for the catch).
+
 ** Updated 1.1.5 **
 * Added portal: Astravar Harbor.
 * Updated localization for koKR, zhCN, zhTW.
