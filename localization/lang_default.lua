@@ -12,3 +12,4 @@ L["TELE_TWILIGHT_VINEYARDS"] = "Twilight Vineyards";
 L["TELE_EVERMOON_TERRACE"] = "Evermoon Terrace";
 L["TELE_ACTIVE"] = "Status: Active";
 L["TELE_INACTIVE"] = "Status: Inactive";
+L["TELE_ASTRAVAR_HARBOR"] "Astravar Harbor";
