@@ -7,7 +7,7 @@
 ## X-Curse-Project-ID: telemancy
 ## X-GitHub-Repo: Kruithne/Telemancy
 ## X-Localization: enUS, frFR, esES, deDE, ruRU, zhCN, koKR, zhTW
-## X-Contributors: q3fuba, Gnarfoz, vlakarados, fyhcslb, Urkaz, 이중호, Tartifion, mrozekma, EKE00372, zp, Bloerwald
+## X-Contributors: q3fuba, Gnarfoz, vlakarados, fyhcslb, Urkaz, 이중호, Tartifion, mrozekma, EKE00372, zp, Bloerwald, battlee
 ## X-License: All Rights Reserved. Modifications welcome on GitHub: https://github.com/Kruithne/Telemancy
 
 Krutilities.lua

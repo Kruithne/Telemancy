@@ -14,4 +14,5 @@ if GetLocale() == "koKR" then
 	L["TELE_TWILIGHT_VINEYARDS"] = "황혼의 포도원";
 	L["TELE_ACTIVE"] = "상태: 활성";
 	L["TELE_INACTIVE"] = "상태: 비활성";
+	L["TELE_EVERMOON_TERRACE"] = "영원달 정원";
 end
