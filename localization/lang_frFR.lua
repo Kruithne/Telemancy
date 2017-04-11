@@ -12,6 +12,7 @@ if GetLocale() == "frFR" then
 	L["TELE_FELSOUL_HOLD"] = "Bastion Gangrâme";
 	L["TELE_WANING_CRESENT"] = "Lune descendante";
 	L["TELE_TWILIGHT_VINEYARDS"] = "Vignobles du Crépuscule";
+	L["TELE_ASTRAVAR_HARBOR"] = "Port d'Astravar";
 	L["TELE_ACTIVE"] = "Statut: Actif";
 	L["TELE_INACTIVE"] = "Statut: Inactif";
 end
