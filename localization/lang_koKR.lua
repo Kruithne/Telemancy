@@ -1,4 +1,4 @@
--- Korea localization by 이중호, battlee
+-- Korea localization by 이중호, battlee and mokpo.
 
 if GetLocale() == "koKR" then
 	local L = Telemancy.strings;

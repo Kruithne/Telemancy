@@ -1,4 +1,4 @@
--- German localization by Gnarfoz and Bloerwald.
+-- German localization by Gnarfoz, Bloerwald and flow0284.
 
 if GetLocale() == "deDE" then
 	local L = Telemancy.strings;

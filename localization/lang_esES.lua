@@ -1,4 +1,4 @@
--- Spanish localization by Urkaz.
+-- Spanish localization by Urkaz and flow0284.
 
 if GetLocale() == 'esES' then
 	local L = Telemancy.strings;

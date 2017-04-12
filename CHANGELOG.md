@@ -1,3 +1,6 @@
+** Version 1.1.7 **
+* Updated localization for deDE, esES, koKR.
+
 ** Version 1.1.6 **
 * Updated localization for frFR.
 * Fixed missing coma that broke everything (thanks Nelfym for the catch).
