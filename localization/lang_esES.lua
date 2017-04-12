@@ -14,4 +14,5 @@ if GetLocale() == 'esES' then
 	L["TELE_TWILIGHT_VINEYARDS"] = "Viñedos Crepusculares";
 	L["TELE_ACTIVE"] = "Estado: Activo";
 	L["TELE_INACTIVE"] = "Estado: Inactivo";
+	L["TELE_ASTRAVAR_HARBOR"] = "Puerto de los Astravar";
 end
