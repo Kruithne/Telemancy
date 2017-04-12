@@ -15,7 +15,7 @@ local POINTS = {
 	{ teleX = 46.66, teleY = 81.00, teleName = "TELE_WANING_CRESENT", questID = 42487, removedBy = 38649 },
 	{ teleX = 64.00, teleY = 60.40, teleName = "TELE_TWILIGHT_VINEYARDS", questID = 44084 },
 	{ teleX = 52.00, teleY = 78.76, teleName = "TELE_EVERMOON_TERRACE", questID = 42889 },
-	{ teleX = 54.50, teleY = 69.40, teleName = "TELE_ASTRAVAR_HARBOR", questID = 44719 },
+	{ teleX = 54.50, teleY = 69.40, teleName = "TELE_ASTRAVAR_HARBOR", questID = 44740 },
 };
 
 Telemancy = {
