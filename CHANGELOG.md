@@ -1,3 +1,6 @@
+** Version 1.1.8 **
+* Corrected required quest for Astravar Harbor portal indicator.
+
 ** Version 1.1.7 **
 * Updated localization for deDE, esES, koKR.
 
